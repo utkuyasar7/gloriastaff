@@ -21,7 +21,7 @@ app.use("/tip",tip)
 
 
 
-
-app.listen(3001,()=>{
-    console.log("Çalışıyorum")
-})
+const PORT = process.env.PORT || 3005;
+app.listen(PORT, () => {
+  console.log(`Server ${PORT} numaralı portta çalışıyor.`);
+});
